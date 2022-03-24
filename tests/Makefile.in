@@ -596,7 +596,7 @@ xcbincludedir = @xcbincludedir@
 SUBDIRS = 
 EXTRA_DIST = CheckLog.xsl
 AM_MAKEFLAGS = -k
-AM_CFLAGS = -Wall -Werror @CHECK_CFLAGS@ -I$(top_srcdir)/src
+AM_CFLAGS = -Wall @CHECK_CFLAGS@ -I$(top_srcdir)/src
 LDADD = @CHECK_LIBS@ $(top_builddir)/src/libxcb.la
 @HAVE_CHECK_TRUE@check_all_SOURCES = check_all.c check_suites.h check_public.c
 all: all-recursive
